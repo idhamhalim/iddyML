@@ -1,0 +1,104 @@
+#!/bin/bash
+
+
+
+#Initalizing the variables
+network1=uFi_9C2821
+
+network2=4FA59_MaxisBroadband
+
+speed1=path
+speed2=path
+
+
+
+
+#Turning on the wifi
+
+
+echo "Turning on WiFi"
+
+
+rfkill unblock wifi
+
+nmcli n on
+
+
+
+
+
+#List available networks (not compulsory)
+
+
+echo "Listing available networks"
+
+nmcli c show
+
+
+
+#Connecting to network
+
+
+echo "connecting to network $network1"
+
+nmcli c up "$network1"
+
+
+echo "connecting to network $network2"
+
+nmcli c up "$network2"
+
+
+
+#read connection speed from text file
+
+
+echo "checking for the best connection"
+
+read -r < $speed1 && read -r < $speed2
+
+#comparing connection speed and ranking the connection speed
+
+
+
+#wip (perlu ke\?)
+
+
+
+#reset network connection
+
+
+nmcli c down "$network1"
+
+nmcli c down "$network2"
+
+
+
+#compare connection speed of both connection
+
+
+read -r < $speed1 && read -r < $speed2
+
+if $speed1 >> $speed2,
+
+then echo "connected to $network1"
+
+nmcli c up $network1
+
+
+else
+echo "connected to $network2"
+
+nmcli c up $network2
+
+
+
+#delay 15
+
+
+sleep 15
+
+
+
+#end
+fi
