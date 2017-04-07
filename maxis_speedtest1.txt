@@ -1,3 +1,4 @@
+Date,Ping,Download-Speed,Upload-Speed
 Fri Jan 27 16:34:01  2017,52.181 ,16.42 ,9.89 
 Fri Jan 27 16:51:01  2017,65.498 ,10.42 ,7.14 
 Fri Jan 27 17:00:01  2017,x,x,x
