@@ -1115,7 +1115,6 @@ Tue Nov  8 14:30:01  2016,x,x,x
 Tue Nov  8 14:45:01  2016,x,x,x
 Tue Nov  8 15:00:01  2016,x,x,x
 Tue Nov  8 15:15:01  2016,69.47,2.85 ,2.67 
---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --
 Tue Nov  8 15:30:01  2016,x,x,x
 Tue Nov  8 15:45:01  2016,x,x,x
 Tue Nov  8 16:00:01  2016,x,x,x
@@ -3207,8 +3206,6 @@ Thu Dec  1 09:00:01  2016,7.737 ,10.87 ,20.94
 Thu Dec  1 09:15:01  2016,55.437 ,1.30 ,4.49 
 Thu Dec  1 09:30:01  2016,616.672 ,7.49 ,19.39 
 Thu Dec  1 09:45:01  2016,x,x,x
-
-###########################################connected to uniten####################################
 Thu Dec  1 10:01:43  2016,608.962 ,16.62 ,22.13 
 Thu Dec  1 10:15:01  2016,4.634 ,6.45,82.77 
 Thu Dec  1 10:30:01  2016,7.809 ,12.21 ,85.48 
