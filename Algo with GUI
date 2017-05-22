@@ -8,41 +8,33 @@ MY1=/home/idham/Desktop/MY1
 echo "Turning on WiFi"
 rfkill unblock wifi
 nmcli n on
-yad --title="Predictive Selection" --text="Turning on WiFi" --timeout 5 --center --no-buttons --width
-500
+yad --title="Predictive Selection" --text="Turning on WiFi" --timeout 5 --center --no-buttons --width 500
 #List available networks (not compulsory)
 echo "Finding available networks"
 #nmcli c show
-yad --title="PREDICTIVE SELECTION" --text="Finding available networks" --timeout 5 --center
---no-buttons --width 500
+yad --title="PREDICTIVE SELECTION" --text="Finding available networks" --timeout 5 --center --no-buttons --width 500
 #Connecting to network
 echo "connecting to network $network1"
-yad --title="PREDICTIVE SELECTION" --text="connecting to network uFi_9C2821" --timeout 5
---center --no-buttons --width 500
+yad --title="PREDICTIVE SELECTION" --text="connecting to network uFi_9C2821" --timeout 5 --center --no-buttons --width 500
 nmcli c up "$network1"
 echo "connected to network $network1"
-yad --title="PREDICTIVE SELECTION" --text="connected to network uFi_9C2821" --timeout 5
---center --no-buttons --width 500
+yad --title="PREDICTIVE SELECTION" --text="connected to network uFi_9C2821" --timeout 5 --center --no-buttons --width 500
 echo "connecting to network $network2"
-yad --title="PREDICTIVE SELECTION" --text="connecting to network 4FA59_MaxisBroadband"
---timeout 5 --center --no-buttons --width 500
+yad --title="PREDICTIVE SELECTION" --text="connecting to network 4FA59_MaxisBroadband" --timeout 5 --center --no-buttons --width 500
 nmcli c up "$network2"
-echo "connected to the network $network2"yad --title="PREDICTIVE SELECTION" --text="connected to network 4FA59_MaxisBroadband"
---timeout 5 --center --no-buttons --width 500
+echo "connected to the network $network2"
+yad --title="PREDICTIVE SELECTION" --text="connected to network 4FA59_MaxisBroadband" --timeout 5 --center --no-buttons --width 500
 #read connection speed from text file
 #wip (perlu ke\?)
-yad --title="PREDICTIVE SELECTION" --text="Running predictive selection" --timeout 5 --center
---no-buttons --width 500
+yad --title="PREDICTIVE SELECTION" --text="Running predictive selection" --timeout 5 --center --no-buttons --width 500
 echo "reset network connection"
 nmcli c down "$network1"
 nmcli c down "$network2"
 echo "checking for the best connection"
-yad --title="PREDICTIVE SELECTION" --text="checking for the best connection" --timeout 5
---center --no-buttons --width 500
+yad --title="PREDICTIVE SELECTION" --text="checking for the best connection" --timeout 5 --center --no-buttons --width 500
 cat $MY $MY1 | sort > $MYX
 echo "comparing connection speed and ranking the connection speed"
-yad --title="PREDICTIVE SELECTION" --text="comparing connection speed and ranking the
-connection speed" --timeout 5 --center --no-buttons --width 500
+yad --title="PREDICTIVE SELECTION" --text="comparing connection speed and ranking the connection speed" --timeout 5 --center --no-buttons --width 500
 #compare connection speed of both connection
 if $MY -gt $MY1,
 then
