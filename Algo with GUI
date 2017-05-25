@@ -39,12 +39,12 @@ yad --title="PREDICTIVE SELECTION" --text="Comparing Connection Speed and Rankin
 if $MY -gt $MY1,
 then
 echo "connected to $network1"
-yad --title="PREDICTIVE SELECTION" --text="Network Speed =12 Mb/s " --text-align=center --timeout 5 --center --no-buttons --width 300
+yad --title="PREDICTIVE SELECTION" --text="Connected to Celcom, Network Speed =12 Mb/s " --text-align=center --timeout 5 --center --no-buttons --width 300
 nmcli c up $network1
 
 else
 echo "connected to $network2"
-yad --title="PREDICTIVE SELECTION" --text="Network Speed =10 Mb/s " --text-align=center --timeout 5 --center --no-buttons --width 300
+yad --title="PREDICTIVE SELECTION" --text="Connected to Maxis, Network Speed =10 Mb/s " --text-align=center --timeout 5 --center --no-buttons --width 300
 nmcli c up $network2
 #delay 15 seconds
 date +%T
