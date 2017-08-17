@@ -1,4 +1,5 @@
 # Load libraries
+# import various model
 import pandas
 from pandas.tools.plotting import scatter_matrix
 import matplotlib.pyplot as plt
