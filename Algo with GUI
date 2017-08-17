@@ -1,5 +1,7 @@
 #!/bin/bash
 #Initializing the variables
+#uFi_9C2821 is Celcom Broadband
+#4FA59_MaxisBroadband is Maxis Broadband
 network1=uFi_9C2821
 network2=4FA59_MaxisBroadband
 MY=/home/idham/Desktop/celcomspeed1.csv
