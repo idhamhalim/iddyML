@@ -1,14 +1,19 @@
 #!/bin/bash
 
 
+#uFi_9C2821 is Celcom Broadband
+#4FA59_MaxisBroadband is Maxis Broadband
 
 #Initalizing the variables
 network1=uFi_9C2821
 
 network2=4FA59_MaxisBroadband
-
-speed1=path
-speed2=path
+
+
+
+speed1=path
+speed2=path
+
 
 
 
