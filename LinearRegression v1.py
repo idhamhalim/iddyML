@@ -3,7 +3,7 @@
 import pandas
 from pandas.tools.plotting import scatter_matrix
 import matplotlib.pyplot as plt
-from sklearn import model_selection
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
@@ -18,6 +18,12 @@ from sklearn.svm import SVC
 url = "/home/ammar/Downloads/celcom1.csv"
 names = ['Date', 'Ping', 'Download-speed', 'Upload-speed', 'Telco']
 dataset = pandas.read_csv(url, names=names)
+
+
+# Scrutinizing the data
+dataset.head()
+dataset.shape()
+dataset.describe()
 
 # Split-out validation dataset
 array = dataset.values
